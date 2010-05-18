@@ -10,6 +10,8 @@ This mimics the behavior of the Visual Studio macro posted by David Starr at htt
 
 The plugin is implemented as a ContextAction plugin. When you have the caret on a line with a public method where the name is a string literal, then Alt-Enter will provide an action for 'Convert from spaces to underscore in string literals'
 
+The plugin is currently just hacked together quite quickly and I expect that it can be improved and optimized further.
+
 Installation:
 - Open the solution in VS2010 and fix the paths to the references. They should point to assemblies located in your ReSharper bin folder.
 - Build the solution and copy BoxcarMethodNamePlugin.dll to your ReSharper plugin folder (example: C:\Program Files\JetBrains\ReSharper\v5.0\Bin\Plugins)
