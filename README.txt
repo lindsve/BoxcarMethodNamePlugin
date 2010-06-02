@@ -1,4 +1,4 @@
-A plugin for ReSharper 5.0 which makes it simple to change a method declaration from
+A plugin for ReSharper 5.1 which makes it simple to change a method declaration from
 
     public void "Test that something is foobar"()
 
