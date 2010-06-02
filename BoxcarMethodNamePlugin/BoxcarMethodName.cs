@@ -66,26 +66,12 @@ namespace BoxcarMethodNamePlugin
                 var lineMarker = _provider.Document.GetCoordsByOffset(caretOffset);
                 var lineContent = _provider.Document.GetLineText(lineMarker.Line);
 
-                var indents = GetLineIndents(lineContent);
-
-                if (lineContent.Substring(indents).StartsWith("public") && literalRegex.IsMatch(lineContent))
+                if (lineContent.EndsWith(")") && literalRegex.IsMatch(lineContent))
                 {
                     return true;
                 }
             }
             return false;
-        }
-
-        private int GetLineIndents(string lineContent)
-        {
-            var indents = 0;
-            foreach (var character in lineContent)
-            {
-                if (character == ' ')
-                    indents++;
-                else break;
-            }
-            return indents;
         }
     }
 }
