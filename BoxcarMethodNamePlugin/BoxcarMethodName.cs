@@ -55,7 +55,7 @@ namespace BoxcarMethodNamePlugin
 
         public override string Text
         {
-            get { return "Convert from spaces to underscore in string literals"; }
+            get { return "Convert from spaces to underscore in string literals in method declarations"; }
         }
 
         public bool IsAvailable(IUserDataHolder cache)
