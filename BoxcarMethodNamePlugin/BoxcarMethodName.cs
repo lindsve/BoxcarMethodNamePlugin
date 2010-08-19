@@ -10,7 +10,7 @@ using JetBrains.Util;
 
 namespace BoxcarMethodNamePlugin
 {
-    [ContextAction(Group = "C#", Name = "BoxcarMethodName", Description = "Adds context action to convert from spaces to underscore in string literals")]
+    [ContextAction(Group = "C#", Name = "BoxcarMethodName", Description = "Adds context action to convert from spaces to underscore in string literals in method names")]
     public class BoxcarMethodName : BulbItemImpl, IContextAction
     {
         readonly ICSharpContextActionDataProvider _provider;
@@ -55,7 +55,7 @@ namespace BoxcarMethodNamePlugin
 
         public override string Text
         {
-            get { return "Convert from spaces to underscore in string literals in method declarations"; }
+            get { return "Convert from spaces to underscores"; }
         }
 
         public bool IsAvailable(IUserDataHolder cache)
